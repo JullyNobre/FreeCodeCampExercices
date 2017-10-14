@@ -1,0 +1,15 @@
+<script>
+function palindrome(str) {
+    var expression = /[a-z]+|[0-9]+/gi;
+    var newStr = str.match(expression).join("");
+    newStr = newStr.toLowerCase();
+    var inverse = newStr.split("").reverse().join("");
+    
+    if(newStr == inverse){
+        return true;
+    }
+    return false;
+}
+
+palindrome("1 eye for of 1 eye.");
+</script>
