@@ -1,0 +1,14 @@
+<script>
+
+function slasher(arr, howMany) {
+  // it doesn't always pay to be first
+  var arrReturn = new Array();
+  for(var i = howMany; i < arr.length; i++){
+    arrReturn.push(arr[i]);  
+  }
+  return arrReturn;
+}
+
+slasher([1, 2, 3], 2);
+
+</script>
