@@ -1,0 +1,21 @@
+<script>
+
+function chunkArrayInGroups(arr, size) {
+  var arrReturn = new Array();
+  var i = 0, j = 0;
+  
+  while(i < arr.length){
+    var arrAux = new Array();  
+    while(j < size && i < arr.length){
+      arrAux.push(arr[i]); 
+      j++; i++;
+    }
+    j = 0;
+    arrReturn.push(arrAux);
+  }
+  return arrReturn;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+</script>
