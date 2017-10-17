@@ -1,0 +1,15 @@
+<script>
+function destroyer(arr) {
+    var args = Array.from(arguments);
+    function checkValues(value){
+        for(var i = 1; i < args.length; i++){
+            if(args[i] == value){
+                return false;
+            }
+        }
+        return true;
+    }
+    return args[0].filter(checkValues);
+}
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+</script>
